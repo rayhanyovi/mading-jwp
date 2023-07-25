@@ -69,6 +69,7 @@ header {
 
 .card-thumbnail {
   width: 95%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -93,4 +94,21 @@ footer {
   color: #e4e4e4;
   background-color: #232323;
   padding: 15px 30px;
+}
+
+.tulis-mading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tulis-mading form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tulis-mading form label {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 7px;
 }

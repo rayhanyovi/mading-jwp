@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Halaman Utama Mading</title>
   </head>
   <body>
     <%- include('header') %>
@@ -14,7 +14,7 @@
         <h2 class="card-title" style="margin-bottom: 10px"><%=item.judul%></h2>
         <img
           class="card-thumbnail"
-          src="/assets/image-placeholder.jpg"
+          src="/uploads/<%= item.thumbnail %>"
           alt="" />
         <p class="card-caption"><%=item.isi%></p>
         <br />

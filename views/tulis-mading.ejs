@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin</title>
-    <link rel="stylesheet" href="/css/input.css" />
+    <title>Tulis Mading</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
@@ -12,21 +11,25 @@
     <%- include('header'); %>
 
     <div class="tulis-mading mh100">
-      <h1>Tulis Mading</h1>
+      <h1>Ada Ide Menarik Apa Hari Ini?</h1>
+
       <hr />
+      <br>
         <div class="form">
-          <form action="/input" method="post" enctype="multipart/form-data">
-            <label for="judul">Judul</label><br />
+          <form action="/tulis-mading" method="post" enctype="multipart/form-data">
+            <label for="judul">Judul</label>
             <input
               class="judul"
               type="text"
               placeholder="Masukan Judul"
-              name="judulName" /><br />
-            <label for="caption">Caption</label><br />
-            <textarea placeholder="Masukan Caption" name="caption"></textarea
-            ><br />
-            <label for="gambar">Gambar</label><br />
-            <input type="file" name="image" id="image" accept="image/*" />
+              name="madingJudul" />
+            <br>
+            <label for="caption">Isi Mading</label>
+            <textarea placeholder="Masukan Caption" name="madingIsi"></textarea>
+            <br>
+            <label for="gambar">Gambar</label>
+            <input type="file" name="image" id="image" accept="image/*" title="" />
+            <br>
             <input class="button-submit" type="submit" value="Submit" />
           </form>
         </div>
@@ -37,3 +40,4 @@
     <%- include('footer'); %>
   </body>
 </html>
+
